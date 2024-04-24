@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.crochet-co .Comname {
+  overflow: auto;
+  background-color: #fffbf5;
+  color: #8b6741;
+  font-weight: bold;
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: #8b6741;
+}
+
+img {
+  width: 100%;
+}
+
+.material-icons {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.Icons {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #fffbf5;
+}
+
+.crochet-co {
+  padding: 20px;
+  text-align: center;
+
+  background-color: #fffbf5;
+}
+
+/* icon color */
+
+/* Style for the Crochet.Co heading */
+.crochet-co h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Navbar styles */
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fffbf5;
+  color: #8b6741;
+}
+/* Highlight effect for navbar items */
+.menu-drawer__menu-item {
+  position: relative;
+}
+
+.menu-drawer__menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #8b6741; /* Highlight color */
+  transition: width 0.2s;
+}
+
+.menu-drawer__menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-drawer__menu-item.active::after {
+  width: 100%;
+}
+
+/* Style for the Crochet.Co heading */
+.crochet-co h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Style for the navbar items */
+.menu-drawer__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Style for the navbar links */
+.menu-drawer__menu-item {
+  margin-left: 20px;
+}
+
+/* Style for the dropdown button */
+.dropdown-btn {
+  cursor: pointer;
+}
+
+/* Style for the dropdown icon */
+.icon-arrow {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+/* Add border radius to the dropdown menu */
+.menu-drawer__submenu {
+  border-radius: 5px;
+  height: 75px;
+}
+
+/* Hide submenu by default */
+.menu-drawer__submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #8b6741;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Show submenu on parent hover */
+.menu-drawer__menu-item:hover .menu-drawer__submenu {
+  display: block;
+}
+
+/* Style for the submenu items */
+.menu-drawer__submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 10px;
+}
+
+.menu-drawer__submenu a {
+  display: block;
+  padding: 8px 0;
+  color: #8b6741;
+  text-decoration: none;
+}
+
+/* Hover effect for the submenu items */
+.menu-drawer__submenu a:hover {
+  background-color: #f1f1f1;
+}
+/* //TODO:for the cart and profile */
+
+/* main */
+/* Container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* for modal details*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Card styles */
+.card {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card header styles */
+.card-header {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card body styles */
+.card-body {
+  padding: 20px;
+}
+
+/* Card image styles */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+/* <!-- for the shipping policy --> */
+
+.allignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: #f9f9f9;
+  color: #8b6741;
+  width: auto;
+  height: 650px;
+}
+.text {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.shipping {
+  justify-content: center;
+}
+.content {
+  margin: 20px;
+  padding: 15px;
+}
+.p1 {
+  margin-bottom: 20px;
+}
+
+.p2 {
+  margin-bottom: 20px;
+}
+.p3 {
+  margin-bottom: 20px;
+}
+
+/* footer section */
+/* //TODO: in progress */
+
+footer {
+  background-color: #8b6741;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 154px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #6c4934;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* // styles for the filter */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #8b6741;
+  background-color: #f9f9f9;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Form and input styles */
+input[type="text"],
+select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #8b6741;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #6c4934;
+}
+
+/* Product item styles */
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clearfix for grid */
+.product-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
